@@ -7,7 +7,7 @@ A responsive backgammon opening trainer built with React and Vite.
 Requires Node.js 20.19+ or 22.12+.
 
 ```sh
-npm install
+npm ci
 npm run dev
 ```
 
@@ -18,6 +18,15 @@ npm run build
 ```
 
 Deploy the generated `dist` directory to any static hosting provider.
+
+## Project layout
+
+`index.html`, `package.json`, and `package-lock.json` live at the repository root.
+The React entry point, styles, rules engine, and rule tests live in `src/`.
+Keep that folder structure when uploading or copying the project.
+
+GitHub Actions runs the rule tests and production build for pull requests and
+updates to `main`. Generated `dist/` files and `node_modules/` are ignored by Git.
 
 ## Features
 
